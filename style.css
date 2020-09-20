@@ -1,0 +1,128 @@
+
+body{
+    padding: 2em 2em 5em 2em;
+    background-color: rgb(164, 252, 0);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(183, 252, 55);
+    
+    display: flex;
+    margin: 10px;
+}
+/*For Mobile Phone*/
+[class*="container"]{
+    width: 100%;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+}
+/*Column 1 menu*/
+.row-menu{
+    border: 2px solid #ffd000;
+    background-color: #ffd000;
+    color: black;
+    font-family: 'Lucida Sans',sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    margin: auto;
+    width: 15%;
+    text-align: center;
+    list-style: none;
+    flex: 0 1 auto;
+}
+.column{
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*Column 2 Display*/
+.main-section{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.main-display{
+    background-image: url(main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.text1,.text2{
+    position: absolute;
+    text-align: center;
+    width: auto;
+    top: 30%;
+    left: 10%;
+    background-color: rgba(248, 252, 35, 0.5);
+    padding: 0;
+}
+.price-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.price{
+    background-color: #ffd000;
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+    width: 70%;
+    height: 50%;
+    position: relative;
+    justify-content: space-between;
+}
+
+/*Column 3 Menubox */
+.menubox{
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Column 4 Menu Description*/
+.menu-desc{
+    display: flex;
+    padding: 10px;
+    margin-left: 10em;
+}
+.menu-img{
+    margin: auto;
+}
+.btn{
+    background-color: #ffd000;
+    border: transparent;
+}
+.btn:hover{
+    background-color: #fff;
+}
+@media only screen and (max-width: 768px){
+    .menu-desc{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+/* Column 5 Fungram */
+.gallery{
+    text-align: center;
+    flex-direction: row;
+    padding: 1em;
+}
